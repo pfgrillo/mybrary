@@ -3,7 +3,7 @@ if(process.env.NODE_ENV !== 'production'){
     const path = require('path')
     dotenv.config()
 }
-console.log(process.env.NODE_ENV);
+
 const express = require('express');
 const morgan = require('morgan');
 const exphbs = require('express-handlebars'); //llama las plantillas creadas en cada ruta para mostrar HTMLs - se configura en settings
