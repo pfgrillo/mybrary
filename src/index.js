@@ -13,7 +13,7 @@ const path = require('path');
 const app = express();
 
 // Settings
-app.set('port',  4000);  //process.env.PORT ||
+app.set('port',  process.env.PORT || 4000);  //process.env.PORT ||
 app.set('views', path.join(__dirname, 'views'));     //Establece donde está la carpeta views que por defecto debería ir en la carpeta ppal pero está dentro de src
                       //__dirname me la direccion del archivo actual
 app.engine('.hbs', exphbs({
